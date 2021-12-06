@@ -191,7 +191,7 @@ a.anchor{display: block; position: relative; top: -110px;}
 
 /* Hobbies & Interests */
 #interests-container {
-    height: 50vh;
+    min-height: 50vh;
 }
 
 #interests-list, .contact-list {
