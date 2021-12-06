@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kev Mooney</title>
+    <!-- Load local Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Load additional stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Material+Icons&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <!-- Load Bootstrap JS -->
+    <script src='js/bootstrap.bundle.min.js'></script>
+    <!-- Load additional JS -->
+    <script src="js/script.js"></script>
+</head>
+<body data-bs-spy='scroll' data-bs-target='#km-navbar' data-bs-offset="200" tabindex="0">
+    <!-- Navigation -->
+    <nav id='km-navbar' class='navbar navbar-expand-sm navbar-dark bg-dark bg-gradient fixed-top'>
+        <div class='container-fluid'>
+            <a href='#' class='navbar-brand'><img id='brandImage' src="img/brand_image.png" width="auto" height="100em" class='shadow-lg'></a><a href='#' class='navbar-brand'>K. Mooney</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='navbar-nav ms-auto'>
+                    <li class='nav-item'><a class='nav-link text-uppercase' href='#about'>About</a></li>
+                    <li class='nav-item'><a class='nav-link text-uppercase' href='#skills'>Skills</a></li>
+                    <li class='nav-item'><a class='nav-link text-uppercase' href='#work-exp'>Experience</a></li>
+                    <li class='nav-item'><a class='nav-link text-uppercase' href='#education'>Education</a></li>
+                    <li class='nav-item hidden-sml-scrn'><a class='nav-link text-uppercase' href='#project-section'>Projects</a></li>
+                    <li class='nav-item hidden-sml-scrn'><a class='nav-link text-uppercase' href='#interests-container'>Interests</a></li>
+                    <li class='nav-item'><a class='nav-link text-uppercase' href='#contact'>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation -->
+<!-- Hero Parallax -->
+<div id='parallax-hero' class='parallax ms-0 row'>
+    <div class='d-flex align-items-center justify-content-center vh-100'>
+        <div>
+            <h1 class='bg-dark bg-gradient bg-opacity-75 text-light px-4 text-center py-3 shadow-lg'><a tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" 
+                title="<h2>At a Glance</h2>" 
+                data-bs-content="<ul>
+                    <li>Software Developer</li>
+                    <li>Web Developer</li>
+                    <li>Graphic Design</li>
+                </ul>">
+                Kevin Mooney</a></h1>
+            <h3 class='opacity-75 text-light text-center shadow-lg'>Development / Design</h3>
+        </div>
+    </div>
+</div>
+<!-- end Hero -->
+<!-- About -->
+<div id='about' class='row bg-light'>
+    <div id='about-img' class='col-3'>
+        <img class='img-fluid' src='img/brand_image.png'>
+    </div>
+        <div class='col-9 m-auto'>
+            <h1>Kevin Mooney</h1>
+            <ul id='about-list'>
+                <li id='software-dev'>Software Developer</li>
+                <li id='web-dev'>Web Developer</li>
+                <li id='graph-des'>Graphic Designer</li>
+                <li id='gsd-dad'>German Shepherd Owner</li>
+                <li id='about-contact'><button class='btn btn-success' data-bs-toggle="modal" data-bs-target="#contactModal">Contact</button></li>
+            </ul>
+        </div>
+        <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div id='contact-modal' class='mx-3'>
+                        <h1>Contact</h1>
+                        <p>If you would like to learn more, or want to get in touch, please see the links below</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class='contact-list'>
+                        <li><a href='mailto:x00152022@mytudublin.ie' target='_blank'><i class="bi bi-envelope-fill mx-2"></i>Email</a></li>
+                        <li><a href='https://www.linkedin.com/in/kevin-mooney-it/' target='_blank'><i class="bi bi-linkedin mx-2"></i>LinkedIn</a></li>
+                        <li><a href='https://m.me/dakinariten' target='_blank'><i class="bi bi-messenger mx-2"></i>Messenger</a></li>
+                        <li><a href='https://instagram.com/dakinariten/' target='_blank'><i class="bi bi-instagram mx-2"></i>Instagram</a></li>
+                        <li><a href='https://youtube.com/dakinariten' target='_blank'><i class="bi bi-youtube mx-2"></i>YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+<!-- end About -->
+<!-- Skills -->
+<div id="skills-carousel" class="carousel slide bg-dark" data-bs-ride="carousel">
+    <h1 id='skills' class='text-light row text-center justify-content-center container-fluid'>Skills</h1>
+    <div class="carousel-indicators bg-dark">
+      <button type="button" data-bs-target="#skills-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#skills-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#skills-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <div class='row text-center justify-content-center container-fluid'>
+            <div class='col-6' data-bs-toggle="modal" data-bs-target="#softwareModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+                <div class='card h-100'>
+                    <img src="img/software-dev.jpg">
+                    <div class='card-body'>
+                        <h3>Software Development</h3>
+                        <ul class='skill-card-list'>
+                            <li>C#</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='col-6' data-bs-toggle="modal" data-bs-target="#webdevModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+                <div class='card h-100'>
+                    <img src="img/web-dev.jpg">
+                    <div class='card-body'>
+                        <h3>Web Development</h3>
+                        <ul class='skill-card-list'>
+                            <li>OpenCart</li>
+                            <li>Wordpress</li>
+                            <li>HTML / CSS / JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <div class='row text-center justify-content-center container-fluid'>
+            <div class='col-6' data-bs-toggle="modal" data-bs-target="#graphModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+                <div class='card h-100'>
+                    <img src="img/graphic-design.jpg">
+                    <div class='card-body'>
+                        <h3>Graphic Design</h3>
+                        <ul class='skill-card-list'>
+                            <li>Photoshop / Illustrator</li>
+                            <li>FCPX / Premiere Pro / Magix Vegas</li>
+                            <li>Logos, Business Cards, Banners etc.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='col-6' data-bs-toggle="modal" data-bs-target="#photoModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+                <div class='card h-100'>
+                    <img src="img/photography.jpeg">
+                    <div class='card-body'>
+                        <h3>Photography / Film</h3>
+                        <ul class='skill-card-list'>
+                            <li>Landscape</li>
+                            <li>Product Video Reels</li>
+                            <li>Product Photography</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <div class='row text-center justify-content-center container-fluid'>
+            <div class='col-6' data-bs-toggle="modal" data-bs-target="#writingModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+                <div class='card h-100'>
+                    <img src="img/interests-secondary.jpg">
+                    <div class='card-body'>
+                        <h3>Writing</h3>
+                        <ul class='skill-card-list'>
+                            <li>Blog Articles</li>
+                            <li>Product & Ad Copy</li>
+                            <li>Novels & Short Stories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='col-6' data-bs-toggle="modal" data-bs-target="#ecomModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+                <div class='card h-100'>
+                    <img src="img/ecommerce-mgmt.jpg">
+                    <div class='card-body'>
+                        <h3>eCommerce Management</h3>
+                        <ul class='skill-card-list'>
+                            <li>OpenCart</li>
+                            <li>WooCommerce</li>
+                            <li>Analytics & Optimisation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#skills-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#skills-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!-- Modal Skills -->
+<div class="modal fade" id="softwareModal" tabindex="-1" aria-labelledby="softwareModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id='software-content' class='mx-3'>
+                    <h1>Software Development</h1>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>My primary area of interest is in Software Development - I love the problem solving nature of code, but more-so the design and implementation.</p>
+                <p>My IDE of choice is twofold; Visual Studio, and JetBrains PyCharm.
+                    <p>I have developed programmes and applications in JavaScript (using Node.js), Django/Python, and C#, for a range of uses e.g.
+                    Loyalty Points System, Gift Voucher generator, Repair Book Ticketing System, as well as Data Analysis projects using Python and Jupyter Notebook.
+                </p></p>
+                <p>Would you like to schedule a call? Click the button below</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="document.location='#contact';return false;">Contact</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="webdevModal" tabindex="-1" aria-labelledby="webdevModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id='webdev-content' class='mx-3'>
+                    <h1>Web Development</h1>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Designing and developing websites is something I have done from the age of 11, back in the days when Dreamviewer was essential software. These days my tools of choice are
+                    Visual Studio Code, Node.js, Wordpress, and OpenCart.
+                </p><p>As a graphic designer, I help work with companies and individuals to ensure their website matches their brand. For personal, or smaller stores, I favour Wordpress for its ease-of-use for maintenance, however
+                    for larger eCommerce solutions, OpenCart is more powerful, and with their multi-store option, it suits larger stores that want greater departmentalisation.
+                </p><p>As part of the WebDev wheelhouse, I am adept with Bootstrap, plain-jane CSS, HTML 5, and JavaScript, allowing for a more intuitive experience</p>
+                <p>Would you like to learn more? Click the contact button below, and reach out!</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="document.location='#contact';return false;">Contact</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="graphModal" tabindex="-1" aria-labelledby="graphModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id='graph-content' class='mx-3'>
+                    <h1>Graphic Design</h1>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>These days, Graphic Design is more multifaceted than ever. Unsurprisingly, the importance of design in such a visually-led world cannot be understated - having clear, clean and unique designs can help your brand stand out from the crowd.
+                    Whether you're looking for Business Cards, Flyers, Posters, or Large-Form Prints (e.g. Wall graphics for slatwall, Large Banners, Billboards etc.), or just social media content (videos, images, product photography etc.) - give yourself the edge!
+                </p>
+                <p>My primary tools are the Adobe Creative Suite, as well as Final Cut Pro X (FCPX), Magix Vegas, and a good camera!</p>
+                <p>Are you looking for a new logo, or need some graphics? Reach out by clicking the contact button below</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="document.location='#contact';return false;">Contact</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id='photo-content' class='mx-3'>
+                    <h1>Photography & Film</h1>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Photography is a hobby of mine - from wildlife, to landscape, I enjoy taking photos of my surroundings...a moment in time captured forever. Similarly, I enjoy all aspects of film - writing the script, setting up the shots, and cutting
+                    it all together. The two go hand-in-hand.
+                </p>
+                <p>Professionally, as part of my current position I take product photos for eCommerce websites, social media graphics etc. Video-wise, I shoot product reels (highlights & overviews), as well as combining the two for motion-posters (for use on in-store advertising screens).</p>
+                <p>The tools of the trade are varied - Canon 1300D DSLR with lens ranging from 18mm to 250mm, to the humble Galaxy S21 Smartphone. It all depends on the brief. Software-wise, it's Lightroom Classic, Photoshop, Premiere Pro, FCPX and After Effects</p>
+                <p>Interested in revamping your product portfolio? Reach out, and we can discuss it further - just click the contact button below.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="document.location='#contact';return false;">Contact</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="writingModal" tabindex="-1" aria-labelledby="writingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id='writing-content' class='mx-3'>
+                    <h1>Writing</h1>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Everyone may have a story to tell, but that doesn't mean they're good at constructing a compelling narrative. Stories can be found everywhere, and it's something we as people are irrevocably drawn to.</p>
+                <p>Writing is a passion of mine, and something I do compulsively. From full novels, to short stories and poetry (in recent times, it's more research papers etc.) - distilling
+                    down to the core, and finding that resonant quality to captivate a reader's interest. Finding the rhythm of the words, the lyrical quality that subconsciously drives the story forward, with subtext sandwiched between the lines (rather than shoved unceremoniously in your face)
+                </p><p>You might be wondering where the value lies? Anything you've read has been written, and most text-based content can be improved considerably. Set yourself apart from the crowd of mediocrity. From blog articles, to product descriptions, reviews etc.
+                    Finding a concrete narrative, and snaring the reader in for the journey creates an investment in your brand. Connect with the reader, build their trust, and they will be hungry to hear what else you have to say.
+                </p>
+                <p>Curious to learn more? Just click the contact button below, and we can discuss it at length</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="document.location='#contact';return false;">Contact</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="ecomModal" tabindex="-1" aria-labelledby="ecomModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id='ecom-content' class='mx-3'>
+                    <h1>eCommerce Management</h1>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>eCommerce is closely related to Web Development, however there is a different focus (hence the distinction). eCommerce is focused on sales - a solid funnel designed to make shopping as simple as possible.
+                </p>
+                <p>Managing an eCommerce store requires constant updates, and analysis. Looking at the data from your users to improve the experience, and using the data to better inform purchasing decisions (give the people what they want).</p>
+                <p>My eCommerce platforms of choice are WooCommerce and OpenCart. For smaller stores, WooCommerce is perfect. For larger inventories, OpenCart comes into its own.</p>
+                <p>Do you have an eCommerce store that's not performing to its full potential? Reach out by clicking the contact button below, and we can discuss it further.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="document.location='#contact';return false;">Contact</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- end Skills -->
+<!-- Work Experience -->
+<div id='parallax-workexp' class='parallax row'>
+    <div class='d-flex align-items-center justify-content-center'>
+        <h1 class='bg-dark text-light px-4 opacity-75'>Work Experience</h1>
+    </div>  
+</div>
+</div>
+<div id='work-exp' class='parallax m-5 bg-light'>
+    <div class='p-4'>
+        <div class='row'>
+            <h2>Working Life & Experience</h2>
+            <h4 class='text-muted'>Overview</h4>
+            <p>Not everything in life fits into neat little boxes - there is nuance, and responsibility that exists outside of such rigid defitions and descriptions. For example, as part of my current position I am responsible for the IT Infrastructure (hardware, network, backups, user access etc.), Graphic Design, Procurement, and general management.</p>
+            <p>Having said that, please see below...where everything is filed into neat boxes</p>
+        </div>
+        <div id='work-exp-accordion' class='row accordion accordion-flush'>
+            <div class='workexpcol col-4 h-100'>
+                <div id='current-position'>
+                    <h2 class='accordion-header' id='current-pos-header'>
+                        <button class='accordion-button collapsed bg-dark bg-gradient text-light' type='button' data-bs-toggle='collapse' data-bs-target='#collapseCurrent' aria-expanded="false" aria-controls="collapseCurrent">
+                            Wev Developer & eCommerce Management (2019 - Present)
+                        </button>
+                    </h2>
+                    <div id='collapseCurrent' class='accordion-collapse collapse' aria-labelledby='current-pos-header' data-bs-parent='#work-exp-accordion'>
+                        <div class='accordion-body'>
+                            <p>In my current role, I am responsible for the design, content, and sales optimisation of I Want One Ltd's websites (including launching new sites for emergant endeavours). This ranges from project management
+                                to facilitate the role out of new features, identifying areas of growth, to content updates (new products, web graphics etc). Over the last 18 months, some of the projects have included:
+                            </p>
+                            <ul>
+                                <li>Sourcing new VPS host, and migrating website (with minimal downtime)</li>
+                                <li>Building and launching a new website, integrating with the current store for stock management</li>
+                                <li>Migrating from WooCommerce to Opencart</li>
+                                <li>Overseeing exponential growth in online sales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='workexpcol col-4 h-100'>
+                <div id='prev-position1'>
+                    <h2 class='accordion-header' id='prev-position1'>
+                        <button class='accordion-button collapsed bg-dark bg-gradient text-light' type='button' data-bs-toggle='collapse' data-bs-target='#collapsePrev1' aria-expanded="false" aria-controls="collapsePrev1">
+                            Head of Wholesale & Procurement (2015 - 2019)
+                        </button>
+                    </h2>
+                    <div id='collapsePrev1' class='accordion-collapse collapse' aria-labelledby='current-pos-header' data-bs-parent='#work-exp-accordion'>
+                        <div class='accordion-body'>
+                            <p>As the head of the wholesale division, I was responsible for purchasing and pricing all stock, managing over 250+ trade customers (across Ireland and the UK), in addition to seeking out new business.
+                                This involved invoicing, credit-control, as well as relationship building. Whilst in this role, I developed a database for the company's products, helping track price changes, and ensure the company
+                                stayed profitable.
+                            </p>
+                            <p>As it was complementary to the wholesale business, I was also responsible for handling government contract business, supplying tactical gear to Dublin Airport Authority, the Irish Defence Forces, and
+                                Limerick Fire & Rescue Service. I worked with the department heads to streamline the ordering process, cutting down on sizing errors, and establishing a new line of business for the company.
+                            </p>
+                            <ul>
+                                <li>Purchasing</li>
+                                <li>Sales</li>
+                                <li>Credit Control</li>
+                                <li>Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='workexpcol col-4 h-100'>
+                <div id='prev-position2'>
+                    <h2 class='accordion-header' id='prev-position2'>
+                        <button class='accordion-button collapsed bg-dark bg-gradient text-light' type='button' data-bs-toggle='collapse' data-bs-target='#collapsePrev2' aria-expanded="false" aria-controls="collapsePrev2">
+                            Retail Branch & General Manager (2011 - 2015)
+                        </button>
+                    </h2>
+                    <div id='collapsePrev2' class='accordion-collapse collapse' aria-labelledby='current-pos-header' data-bs-parent='#work-exp-accordion'>
+                        <div class='accordion-body'>
+                            <p>Starting off with I Want One Ltd, I was employed as the Retail Branch manager, responsible for the upkeep and running of the store. This involved ordering/purchasing, merchandising,
+                                sales & customer service, as well as packing orders etc. As part of my role, I was responsible for Social Media Management, consolidating several Facebook pages into one, creating an
+                                Instagram presence, as well as a YouTube channel.
+                            </p>
+                            <p>As part of managing the premises, I was responsible for the IT infrastructure (PC's, Network, data storage, backups, User Access Control etc.), a role that I still carry out with the company.</p>
+                            <ul>
+                                <li>Rosters</li>
+                                <li>Purchasing</li>
+                                <li>Sales & Support</li>
+                                <li>General Management</li>
+                                <li>Managing IT Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- end experience -->
+<!-- Education -->
+<div id='parallax-education' class='parallax row'>
+    <div class='d-flex align-items-center justify-content-center'>
+        <h1 class='bg-dark text-light px-4 opacity-75'>Education</h1>
+    </div> 
+</div>
+<div id='education' class='px-4 m-5 bg-light'>
+    <h1 class='text-muted'>Higher Education</h1>
+    <p>Contrary to the popular view that education is a linear process, it is my conviction that it should never end. Continual improvement - adding new skills, more knowledge, and diversifying at every turn (in both professional and personal context).
+    </p>
+    <p>In that vein, I returned to education part-time in 2018, embarking upon a BSc Hons. Degree in DevOps and Cloud Computing, whilst continuing with my full time position at I Want One Ltd. Balancing professional, education and personal life has been 
+        a challenege, especially when you add the global pandemic into the mix. However, it is a challenge I have met with 100% effort, and the results speak for themselves. You can view the component details below.</p>
+    <ul class="nav nav-tabs">
+        <li class="nav-item" role='presentation'>
+          <a class="nav-link text-dark active" id='devops-tab' data-bs-toggle="tab" data-bs-target="#devops" type="button" role="tab" aria-controls="devops" aria-selected="true">DevOps & Cloud Computing</a>
+        </li>
+        <li class="nav-item" role='presentation'>
+            <a class="nav-link text-dark" id='adapt-tab' data-bs-toggle="tab" data-bs-target="#adapt" type="button" role="tab" aria-controls="adapt" aria-selected="true">ADAPT Level 1</a>
+        </li>
+        <li class="nav-item" role='presentation'>
+            <a class="nav-link text-dark" id='ntc-tab' data-bs-toggle="tab" data-bs-target="#ntc" type="button" role="tab" aria-controls="ntc" aria-selected="true">Exercise & Health Studies</a>
+        </li>
+      </ul>
+      <div class='tab-content'>
+        <div class="row tab-pane fade show tab-pane active" id="devops" role="tabpanel" aria-labelledby="devops-tab" data-bs-offset="200">
+            <nav id='devops-nav' class='navbar-dark bg-light bg-gradient col-3 align-items-stretch p-10'>
+                <a class='navbar-brand' href='https://tudublin.ie' target='_blank'><img id='tu-dub-logo' src='img/edu/tudublin.jpg'></a>
+                <nav class='nav nav-pills flex-column'>
+                    <a class='nav-link text-dark active' href='#devops-overview'>Overview</a>
+                    <a class='nav-link text-dark' href='#devops-year4'>Year 4</a>
+                    <a class='nav-link text-dark' href='#devops-year3'>Year 3</a>
+                    <a class='nav-link text-dark' href='#devops-year2'>Year 2</a>
+                    <a class='nav-link text-dark' href='#devops-year1'>Year 1</a>
+                </nav>
+            </nav>
+            <div id='devops-content' class='col-9 bg-white' data-bs-spy="scroll" data-bs-target="#devops-nav" data-bs-offset="0" tabindex="0">
+                <a id='devops-overview' class='anchor'></a>
+                <div class='h-100'>
+                    <h3>Overview</h3>
+                        <p>Commencing in 2018, studying part-time at the TU Dublin Tallaght campus to achieve a BSc Hons. in DevOps & Cloud Computing.</p>
+                        <p>For the first 3 years, the course content focuses on Computer Science based modules, concentrating on IT Management, preparing graduates
+                            for a well-rounded career in IT. Results for the first three years can be found below, however as year 4 is still in progress, there is
+                            no current GPA data available.
+                        </p><p>Scroll down to see more</p>
+                        </div>
+                <a id='devops-year4' class='anchor'></a>
+                <h3>Year 4</h3>
+                <h4>GPA: To be Confirmed</h4>
+                <ul><strong>Modules</strong>
+                    <li>Architecting on the Public Cloud</li>
+                    <li>Private Cloud Architecture</li>
+                    <li>Enterprise Performance Architecture</li>
+                    <li>Interactive Media Design (Data Visualisation)</li>
+                    <li>DevOps (Continuous Integration, Continious Development)</li>
+                    <li>Security for Cloud & IoT</li>
+                    <li>IT Strategy & Governance</li>
+                </ul>
+                <p>In Progress...</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <hr>
+                <a id='devops-year3' class='anchor'></a>
+                <h3>Year 3</h3>
+                <h4>GPA: <i>3.89</i></h4>
+                <ul><strong>Modules</strong>
+                    <li>Object-Orientated Software Development: <strong>A</strong></li>
+                    <li>Cloud Services & Distributed Computing: <strong>A</strong></li>
+                    <li>Operating Systems 2: <strong>A</strong></li>
+                    <li>Server-Side Web Development: <strong>A</strong></li>
+                    <li>Advanced Routing & Switching: <strong>A</strong></li>
+                    <li>Advanced Database Technologies (Big Data): <strong>B+</strong></li>
+                    <li>Data Analysis: <strong>B+</strong></li>
+                    <li>Project: <strong>A</strong></li>
+                    <li>Experiential Learning (Placement): <strong>PS</strong></li>
+                </ul>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <hr>
+                <a id='devops-year2' class='anchor'></a>
+                <h3>Year 2</h3>
+                <h4>GPA: <i>4.00</i></h4>
+                <ul><strong>Modules</strong>
+                    <li>Client-Side Web Development: <strong>A</strong></li>
+                    <li>Software Quality Assurance & Testing: <strong>A</strong></li>
+                    <li>Information Security: <strong>A</strong></li>
+                    <li>Database Administration & Analysis: <strong>A</strong></li>
+                    <li>Network Fundamentals: <strong>A</strong></li>
+                    <li>Routing & Switching Essentials (Networking 2): <strong>A</strong></li>
+                    <li>IT Scripting & Automation: <strong>A</strong></li>
+                    <li>IT Service Management: <strong>A</strong></li>
+                    <li>Management Science: <strong>A</strong></li>
+                    <li>Financial Management: <strong>A</strong></li>
+                    </ul>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <hr>
+                <a id='devops-year1' class='anchor'></a>
+                <h3>Year 1</h3>
+                <h4>GPA: <i>3.88</i></h4>
+                <ul><strong>Modules</strong>
+                    <li>Software Development 1: <strong>A</strong></li>
+                    <li>Software Development 2: <strong>A</strong></li>
+                    <li>Database Fundamentals: <strong>A</strong></li>
+                    <li>Discrete Maths: <strong>A</strong></li>
+                    <li>Statistics: <strong>A</strong></li>
+                    <li>Visual Design & User Experience: <strong>A</strong></li>
+                    <li>Operating Systems Fundamentals: <strong>A</strong></li>
+                    <li>Critical Skills Development: <strong>A</strong></li>
+                    <li>Operating Systems Fundamentals: <strong>A</strong></li>
+                    <li>Object Orientated Systems Analysis: <strong>B+</strong></li>
+                    <li>Business Information Systems: <strong>B+</strong></li>
+                    <li>Object Orientated Systems Analysis: <strong>B+</strong></li>
+                    <li>Computer Architecture: <strong>B+</strong></li>
+                    </ul>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row tab-pane fade tab-pane" id="adapt" role="tabpanel" aria-labelledby="adapt-tab" data-bs-offset="200">
+            <nav id='adapt-nav' class='navbar-dark bg-light bg-gradient col-3 align-items-stretch p-10'>
+                <a class='navbar-brand' href='https://adaptqualifications.com/' target='_blank'><img id='adapt-logo' src='img/edu/adapt.png'></a>
+                <nav class='nav nav-pills flex-column'>
+                    <a class='nav-link text-dark active' href='#adapt-overview'>Overview</a>
+                    <a class='nav-link text-dark' href='#adapt-level1'>Components</a>
+                </nav>
+            </nav>
+            <div id='adapt-content' class='col-9 bg-white' data-bs-spy="scroll" data-bs-target="#adapt-nav" data-bs-offset="0" tabindex="0">
+                <a id='adapt-overview' class='anchor'></a>
+                <div class='h-100'>
+                    <h3>Overview</h3>
+                    <p>In 2014, I travelled to the United Kingdom to attain ADAPT Level 1, a qualification recently developed to teach Parkour & Free Running. Having, at the time, been teaching for some years, with a recognised qualification
+                        finally available, it was something I needed to do. Delivered by Parkour Generations at the Moberly Sports & Education Centre over four days, including assessment.
+                    </p><p>Scroll down to see more</p>
+                    </div>
+                <a id='adapt-level1' class='anchor'></a>
+                <div class='h-100'>
+                    <h3>ADAPT Level 1</h3>
+                    <ul><strong>Modules</strong>
+                    <li>First Aid</li>
+                    <li>Child Protection</li>
+                    <li>Parkour Training Principles</li>
+                    <li>Strength & Conditioning</li>
+                    <li>Class Planning & Risk Assessment</li>
+                </ul>
+                <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div id='edu-margin'></div>
+                </div>
+                
+                <hr>
+            </div>
+        </div>
+        <div class="row tab-pane fade" id="ntc" role="tabpanel" aria-labelledby="ntc-tab" data-bs-offset="200">
+            <nav id='ntc-nav' class='navbar-dark bg-light bg-gradient col-3 align-items-stretch p-10'>
+                <a class='navbar-brand' href='https://ntc.ie/' target='_blank'><img id='ntc-logo' src='img/edu/ntc.png'></a>
+                <nav class='nav nav-pills flex-column'>
+                    <a class='nav-link text-dark active' href='#ntc-overview'>Overview</a>
+                    <a class='nav-link text-dark' href='#ntc-modules'>Modules</a>
+                </nav>
+            </nav>
+            <div id='ntc-content' class='col-9 bg-white' data-bs-spy="scroll" data-bs-target="#ntc-nav" data-bs-offset="0" tabindex="0">
+                <a id='ntc-overview' class='anchor'></a>
+                <div class='h-100'>
+                    <h3>Overview</h3>
+                    <p>In 2009, I embarked upon a physical education. Having started teaching Parkour/Free Running classes in 2008, and with no recognised qualification, I determined to complete the EQF Level 4
+                        in Exercise and Health Studies, earning a distinction. This covered sports nutrition, programming (exercise), resistance training technique, group management, as well as Anatomy, Physiology
+                        and Myology. This was completed in 2010.
+                    </p><p>Scroll down to see more</p>
+                    </div>
+                <a id='ntc-modules' class='anchor'></a>
+                <div class='h-100'>
+                    <h3>EQF Level 4 in Exercise & Health Studies</h3>
+                    <ul><strong>Modules</strong>
+                    <li>Anatomy, Physiology & Myology</li>
+                    <li>Resistance Training</li>
+                    <li>Exercise Programming</li>
+                    <li>Nutrition</li>
+                    <li>Exercise to Music</li>
+                    <li>Step Aerobics</li>
+                </ul>
+                <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div id='edu-margin'></div>
+                </div>
+                
+                <hr>
+            </div>
+        </div>
+    </div>
+      <div id='edu-margin'></div>
+</div>
+<!-- end Education -->
+<!-- Projects -->
+<div id='project-parallax' class='parallax row'><div class='d-flex align-items-center justify-content-center'><h1 class='bg-dark text-light px-4 opacity-75'>Projects</h1></div></div>
+<div id='project-section' class='parallax bg-light m-5'>
+    <div class='p-4'>
+        <div class='row'>
+            <div class='col-3'><img id='project-secondary-img' class='img-fluid' src='img/project-secondary.jpg'></div>
+            <div class='col-9'><h1>Projects</h1>
+            <p>Working as part of a team, whether in a lead position, or an essential cog in a larger machine is an essential skill. In addition to projects completed as part of my professional life, I have worked on several software-based projects
+                during my time at TU Dublin. Some of these were part of the curriculum, whilst others have been extra-curricular (both volunteer and paid positions). The complexity ranges, but the best way to get an understanding is to see for yourself -
+                explore the samples below, and if you have any questions, please contact me directly
+            </p>
+            <button class='btn btn-success' data-bs-toggle="modal" data-bs-target="#contactModal">Reach Out</button>
+            <div id='edu-margin'></div>
+        </div>
+        </div>
+        <div id='project-accordion' class='row accordion accordion-flush'>
+            <div class='workexpcol col-4 h-100'>
+                <div id='current-position'>
+                    <h2 class='accordion-header' id='rewardsquad-header'>
+                        <button class='accordion-button collapsed bg-dark bg-gradient text-light' type='button' data-bs-toggle='collapse' data-bs-target='#collapseRewardsquad' aria-expanded="false" aria-controls="collapseRewardsquad">
+                            Reward Squad
+                        </button>
+                    </h2>
+                    <div id='collapseRewardsquad' class='accordion-collapse collapse' aria-labelledby='rewardsquad-header' data-bs-parent='#project-accordion'>
+                        <div class='accordion-body'>
+                            <img class='img-fluid' src='img/projects/reward-squad.png'>
+                            <h3>Reward Squad</h3>
+                            <h4 class='text-muted'>Loyalty Points PWA</h4>
+                            <ul>
+                                <li>Progressive Web Application</li>
+                                <li>Django / Python</li>
+                                <li>JavaScript, HTML & CSS</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <p>As part of 3rd year in TU Dublin, we were tasked to design and build a software application. After research, I determined to implement a Loyalty Points system designed to
+                                integrate with eCommerce websites e.g. OpenCart, WooCommerce, etc. The programme was designed modularly, allowing it to be adapted for many different frameworks. The application
+                                also features a self-checkout system, allowing users to scan products with their smart phone to get more information (e.g. price) on the product, and add them to an order. A member
+                                of staff must authorise the checkout, helping prevent theft.
+                            </p>
+                            <p>The application has several user types (customer, clerk, merchant, and administrator), each with their own view (showing them the most relevant information). Built to accommodate multiple stores,
+                                Reward Squad facilitates the users to quickly and easily change store, or to enroll with a new store. It is completely contactless, employing QR codes and scanners for both staff and customers alike.
+                            </p>
+                            <p>Customers can earn and spend reward points, online or in store, and have them shared across two distinct systems. This was achieved by robust transaction control</p>
+                            <p>You can view the source code on <a href='https://github.com/dakinariten/RewardSquad'>GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='workexpcol col-4 h-100'>
+                <div id='csinc'>
+                    <h2 class='accordion-header' id='csinc'>
+                        <button class='accordion-button collapsed bg-dark bg-gradient text-light' type='button' data-bs-toggle='collapse' data-bs-target='#collapseCsinc' aria-expanded="false" aria-controls="collapseCsinc">
+                            CSinc - CanSat
+                        </button>
+                    </h2>
+                    <div id='collapseCsinc' class='accordion-collapse collapse' aria-labelledby='csinc-header' data-bs-parent='#project-accordion'>
+                        <div class='accordion-body'>
+                            <img class='img-fluid' src='img/projects/esero.png'>
+                            <h3>ESERO - Micro:bit</h3>
+                            <h4 class='text-muted'>CSInc</h4>
+                            <ul>
+                                <li>C#</li>
+                                <li>TypeScript</li>
+                                <li>WinForms</li>
+                            </ul>
+                            <p>In the Summer of 2021, I enrolled in the CSInc programme, to help give back to the community. Working with Keith Quille (my former Software Development lecturer) of TU Dublin, and a small team, 
+                                we liased with the ESERO team, and another CSInc team to develop software that would allow secondary school students to more easily work with the Micro:bit for the ESERO CanSat challenge.
+                            </p>
+                            <p>The challenge was to abstract as much from the user as possible - when the Micro:bit is connected, the software will scan all ComPorts to detect it. If not found, it will present a message to the user. Taking
+                                feedback from the other CSInc team (tasked with writing the syllabus for the course), we implemented a helpful graphic to illustrate the different Micro:bit versions (V1 and V2).
+                            </p>
+                            <p>The two primary components of this development were A) the TypeScript programme to be installed onto the Micro:bit to communicate with the computer, and B) the C#/WinForm application to display the sensor data to
+                                the user. The C# programme allows the user to record the sensor data and export to CSV for analysis. The V1 and V2 Micro:bits have different sensors, and so the programme was designed in a way to hide sensor data not
+                                present (in order to remove any confusion).
+                            </p>
+                            <p>This software is not yet hosted on GitHub, however it is in use with schools around the country, helping get the younger generation interested in Computer Science.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='workexpcol col-4 h-100'>
+                <div id='hcaim'>
+                    <h2 class='accordion-header' id='hcaim'>
+                        <button class='accordion-button collapsed bg-dark bg-gradient text-light' type='button' data-bs-toggle='collapse' data-bs-target='#collapseHcaim' aria-expanded="false" aria-controls="collapseHcaim">
+                            HCAIM Migration
+                        </button>
+                    </h2>
+                    <div id='collapseHcaim' class='accordion-collapse collapse' aria-labelledby='hcaim-header' data-bs-parent='#project-accordion'>
+                        <div class='accordion-body'>
+                            <img class='img-fluid' src='img/projects/hcaim.png'>
+                            <h3>Human Centred AI Masters</h3>
+                            <h4 class='text-muted'>Website Migration</h4>
+                            <ul>
+                                <li>Wordpress</li>
+                                <li>AWS Linux 2</li>
+                                <li>Bootstrap 5</li>
+                                <li>PHP, JavaScript, HTML & CSS</li>
+                            </ul>
+                            <p>This project is currently ongoing. As project lead, my job is to identify and assign tasks, as well as overseeing the whole process.</p>
+                            <p>Working with TU Dublin, the Budapest University of Technology & Economics, University of Applied Sciences Utrecht, and University Federico II Italy, the task is to port their static HTML/CSS website to a content management system (CMS).
+                                Working as a team of two, plus a liason between the Universities, Wordpress was identified as the most suitable CMS, and data migration has started.
+                            </p>
+                            <p>The project is broken up into phases - 1.) installation & configuration of wordpress, 2.) data migration & design, and 3.) improved functionality. The current design is to be adapted to wordpress, with minimal changes, instead utilising
+                                the improved functionality wordpress offers. This functionality will be extended as the project continues, with the final phase being maintenance.
+                            </p>
+                            <p>Under the hood, work is continuing to automate the process to facilitate greater failsafes, high availability, and smoother transitioning to other hosing services</p>
+                            <p>The website will be accessible at the same URL, <a href='https://www.humancentered-ai.eu/'>https://www.humancentered-ai.eu/</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- end Projects -->
+<!-- Interests -->
+<div id='parallax-interests' class='parallax row'>
+    <div class='d-flex align-items-center justify-content-center'>
+        <h1 class='bg-dark text-light px-4 opacity-75'>Hobbies / Interests</h1>
+    </div> 
+</div>
+<div id='interests-container' class='parallax m-5'>
+    <div class='row'>
+        <div class='col-3'>
+            <img id='interests-img' class='img-fluid' src='img/interests-secondary.jpg'>
+        </div>
+        <div class='col-9'>
+            <h1>Interests</h1>
+            <p>Since you've made it this far, I can only assume that you would like to learn a little more. If this assumption is incorrect, keep scrolling!</p>
+                <p>Life cannot be summed up simply by the professional, or education - there is so much more. Considering work-life balance is put to the forefront 
+                of many organisations, obviously I am not alone is this line of thought. Another important balance is between mental & physical; staying physically fit
+                helps keep your mind sharp and attentive. As such, my interests typically involve both worlds (as you can see below).
+            </p>
+            <ul id='interests-list'>
+                <li id='pk-fr'>Parkour / Free Running</li>
+                <li id='write-read'>Writing / Reading</li>
+                <li id='tech'>Tech</li>
+                <li id='climbing'>Rock Clibming / Bouldering</li>
+                <li id='photography'>Photography</li>
+                <li id='film'>Filmmaking</li>
+            </ul>
+            <p>In addition to the above, I am also in the process of building and launching three websites; a tech-focused blog/channel called TechClinic, a writing-focused venture entitled Between the Lines, and a personal portfolio website called Inari (long story - ask me about it in the interview).</p>
+            <p>Check out social media feed below for some of these adventures (and plenty of pictures of Lola, my German Shepherd).</p>
+        </div>
+    </div>
+</div>
+<div id=''><div id="curator-feed-default-feed-layout" class='row px-0 mx-0'><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div></div>
+<!-- end Interests -->
+<!-- Contact -->
+<div id='parallax-contact' class='parallax row'><div class='d-flex align-items-center justify-content-center'><h1 class='bg-dark text-light px-4 opacity-75'>Contact</h1></div></div>
+<div class='parallax m-5'>
+    <div id='contact' class='mx-3'>
+        <h1>Contact</h1>
+        <p>If you would like to learn more, or want to get in touch, please see the links below</p>
+        <ul class='contact-list'>
+            <li><a href='mailto:x00152022@mytudublin.ie' target='_blank'><i class="bi bi-envelope-fill mx-2"></i>Email</a></li>
+            <li><a href='https://www.linkedin.com/in/kevin-mooney-it/' target='_blank'><i class="bi bi-linkedin mx-2"></i>LinkedIn</a></li>
+            <li><a href='https://m.me/dakinariten' target='_blank'><i class="bi bi-messenger mx-2"></i>Messenger</a></li>
+            <li><a href='https://instagram.com/dakinariten/' target='_blank'><i class="bi bi-instagram mx-2"></i>Instagram</a></li>
+            <li><a href='https://youtube.com/dakinariten' target='_blank'><i class="bi bi-youtube mx-2"></i>YouTube</a></li>
+        </ul>
+    </div>
+</div>
+<div id='edu-margin'></div>
+<!-- Scroll to Top Button -->
+<button onclick="topFunction()" id="scroll-to-top" title="Go to top" class='btn btn-dark'><i class="bi bi-arrow-up-circle-fill"></i></button>
+<!-- end Contact -->
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+    <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+        (function(){
+        var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+        i.src="https://cdn.curator.io/published/0893a6e8-2b8e-49f7-a0ef-d1cd38d47da2.js";
+        e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+        })();
+    </script>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl, {html: true})
+    })
+
+    var mybutton = document.getElementById("scroll-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+  </script>
+  <footer class='bg-dark bg-gradient row'><div id='footer-div' class='d-flex align-items-center justify-content-center text-center text-muted opacity-50'><h4>X00152022 - more than just a number</h4></div><div class='d-flex align-items-center justify-content-center text-center fs-6 text-muted opacity-50'><p>Designed by K.Mooney, built with HTML & Bootstrap 5.1</p></div></footer>
+</body>
+</html>
