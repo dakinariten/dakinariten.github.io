@@ -279,6 +279,13 @@ a.anchor{display: block; position: relative; top: -110px;}
         width: 25vw;
         height: auto;
     }
+    .desktop-button {
+        display: inline-block;
+    }
+
+    .mobile-button {
+        display: none;
+    }
     
 }
 /* Stack Accordions for small devices; maintain style */
@@ -294,6 +301,14 @@ a.anchor{display: block; position: relative; top: -110px;}
 @media only screen and (max-width: 750px) {
     .hidden-sml-scrn {
         display: none;
+    }
+
+    .desktop-button {
+        display: none;
+    }
+
+    .mobile-button {
+        display: inline-block;
     }
 }
 
