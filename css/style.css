@@ -129,10 +129,14 @@ h3, .navbar {
     color: greenyellow;
 }
 
-#about, #project-section, #skills, #education, #interests-container, #contact {
+#about, #project-section, #skills, #education, #interests-container, #contact, #assignment-overview, #bootstrap-components, #design-discussion {
     scroll-margin-top: 110px;
 }
 
+#x00152022 {
+    margin: 2em;
+    padding-top: 10em;
+}
 
 a.anchor{display: block; position: relative; top: -110px;}
 
