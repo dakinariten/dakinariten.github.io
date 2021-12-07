@@ -338,7 +338,7 @@ background-color: red;
 
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */
-    /* Parallax Scrolling */
+    /* Parallax Scrolling Disable & replace images */
     #parallax-hero {
         background-image: url(../img/ios-hero.jpg);
         min-height: 100vh;
@@ -373,6 +373,14 @@ background-color: red;
         background-attachment: scroll;
         background-position: center;
         background-size: 100vw;
+    }
+
+    .desktop-button {
+        display: none;
+    }
+
+    .mobile-button {
+        display: inline-block;
     }
 
   }
