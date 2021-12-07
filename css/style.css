@@ -261,13 +261,14 @@ a.anchor{display: block; position: relative; top: -110px;}
     border: none;
   }
   
-  #scroll-to-top:hover {
-    background-color: red;
-  }
+#scroll-to-top:hover {
+background-color: red;
+}
 
-  #footer-div {
-      height: 10vh;
-  }
+#footer-div {
+    height: 10vh;
+}
+
 
 @media only screen and (min-width: 1200px) {
     .col-2 {
