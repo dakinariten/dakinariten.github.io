@@ -355,8 +355,8 @@ a.anchor{display: block; position: relative; top: -110px;}
     }
 
     .parallax {    
-        background-attachment: fixed;
-        background-position: scroll;
+        background-attachment: scroll;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
