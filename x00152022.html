@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Details</title>
+    <!-- Load local Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Load additional stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Material+Icons&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <!-- Load Bootstrap JS -->
+    <script src='js/bootstrap.bundle.min.js'></script>
+    <!-- Load additional JS -->
+    <script src="js/script.js"></script>
+</head>
+<body data-bs-spy='scroll' data-bs-target='#km-navbar' data-bs-offset="200" tabindex="0">
+    <nav id='km-navbar' class='navbar navbar-expand-sm navbar-dark bg-dark bg-gradient fixed-top'>
+        <div class='container-fluid'>
+            <a href='#' class='navbar-brand'><img id='brandImage' src="img/brand_image.png" width="auto" height="100em" class='shadow-lg'></a><a href='#' class='navbar-brand'>K. Mooney</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarCollapse'>
+                <ul class='navbar-nav ms-auto'>
+                    <li class='nav-item'><a class='nav-link text-uppercase' href='#assignment-overview'>Overview</a></li>
+                    <li class='nav-item'><a class='nav-link text-uppercase' href='#design-discussion'>Design</a></li>
+                    <li class='nav-item'><a class='nav-link text-uppercase' href='#bootstrap-components'>Bootsrap</a></li>
+                    <li class='nav-item'><a class='nav-link text-uppercase' href='https://dakinariten.github.io/'>K.Mooney</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id='assignment-overview'>
+        <h1>Component Overview</h1>
+        <ul>
+            <li>All details must be true <i class="bi bi-check"></i></li>
+            <li>Hero component (photo + details) <i class="bi bi-check"></i></li>
+            <li>Education Details (grades & modules etc.) <i class="bi bi-check"></i></li>
+            <li>Project Details <i class="bi bi-check"></i></li>
+            <li>Work Experience / Placement <i class="bi bi-check"></i></li>
+            <li>Work Interested in <i class="bi bi-check"></i></li>
+            <ul><li>Found in popover on hero title</li>
+                <li>Found in subtitle of hero component</li>
+                <li>Found in the individual Skill Cards</li></ul>
+            <li>Hobbies/Interests Section (toward end of page) <i class="bi bi-check"></i></li>
+            <ul><li>Found as second to last section; not last, as if the user scrolls to the end I wanted to present them with the most relevant information i.e. contact details</li></ul>
+            <li>Themed Professionally <i class="bi bi-check"></i></li>
+            <ul><li>Dark mode is favoured by developers; I wanted to subconsciouly invoke this - using dark colours for primary navigation, whilst keeping it light for ease of reading</li></ul>
+            <li>Modal Dialog for contact information <i class="bi bi-check"></i></li>
+            <ul><li>This dialog is found in multiple locations: About section, Project Section, and if you're on mobile, from within the skill card modal windows</li></ul>
+            <li>No defamatory material <i class="bi bi-check"></i></li>
+            <ul><li>Considering all information must be true, and truth is a defense against defammation, this point is moot. Regardless, I'm confident nothing within the page could be considered defammatory</li></ul>
+            <li>Dynamic Content <i class="bi bi-check"></i></li>
+            <ul><li>Using Curator.io, under Interests, there is a dynamic link to social media feed</li></ul>
+            <li>Hosted on Github <i class="bi bi-check"></i></li>
+        </ul>
+    </section>
+    <section id='design-discussion'>
+        <h1>Website Overview</h1>
+        <p>Designed as a professional online CV, this website puts forth skills, accomplishments, and personality. It has been built from scratch using HTML, CSS, JavaScript, and Bootstrap 5 - designed to
+            work on desktop (with large displays), tablets, and mobile. This optimisation extends to functionality testing across Android and iOS to preserve the user experience, regardless of device used to access.</p>
+            <p>It projects to prospective employers key details that they should know.
+            At a glance you can glean aspects of personality, work ethic, and commitment, as well as being able to drill down for more information.
+        </p>
+        <p>The user has been kept in the foreground for this design - presenting only relevant information at all times. Upon loading the website, you are greeted with a full page hero
+            picture, overlaid with my name, and areas of primary interest. If you hover on the title on the hero component, a popover will show areas of key interest, styled
+            in a way that resembles an old-school terminal. This is to reward exploration, and encourage it for further in the page. Simplicity is key.
+        </p>
+        <p>Navigation is smooth, and optimised for various screens - there are sub-components that were deemed non-essential (projects & interests) that will disappear on small screens,
+            before the menu collapses to a mobile-friendly hamburger style. The navigation bar is right aligned, and so for mobile menu, this has been preserved to improve muscle memory for
+            repeat visitors. The brand image is a headshot, to remind visitors of where they are, as well as to instill confidence. The navigation features scrollspy, highlighting where the
+            user is on the page.
+        </p>
+        <p>On most devices, there is a parallax scrolling effect, to give a smoother overall appearance. Unfortunately this is not compatible with iOS devices, and has been disabled for them.
+            The overall experience is preserved with optimised images, however the scrolling effect is absent.
+        </p>
+        <p>There is a breif "About" section, showing the brand image in a larger context, as well as reaffirming primary points to the user. They can see areas of skills/work quickly and easily,
+            further emphasised by the visual queues of the customised list elements. A contact button allows a modal menu to appear, providing a number of ways to make contact - this menu
+            opens all links in a new tab, to preserve the browsing experience. The button colour was set to green as it is associated with phone icons.
+        </p>
+        <p>In the next section, the dark colourscheme returns to create a divider, and show the user they are making progress. Each skill is in its own card, in a carousel showing two at a time.
+            There are two methods to control the carousel; indicators and side-arrows. This way the user can explore more skills, or keep scrolling if they're not interested. Similarly, the
+            web page encourages exploration - if the user clicks a skill card, a modal window with more information will appear. Inside this window, they can proceed to the contact section (on desktop), or
+            open a contact modal window (on mobile). This functionality is hinted at by tooltips on hover, however the user is not bombarded with information.
+        </p>
+        <p>The majority of sections are broken up by parallax scrolling with images that are warm, contrasting with the dark theme to subconsciously demonstrate warmth to the user. The work experience
+            section is centered in the page, to provide a comfortable reading experience, bordered in white, with a light background to subconsciously draw the eye to the main content. The 
+            dark theme is preserved in the accordion headings. None are active as standard, prompting interaction from the user - each accordion collapses the others, keeping the focus on a single
+            point in time. The text was written in a way to demonstrate my thought process and personality type, setting myself apart from the crowd without sacrificing professionalism.
+        </p><p>
+            The education section takes its visual design cues from the preceeding section, reinforcing the theme for the user. It is laid out in a way to pull attention to the important areas.
+            Each area of education has a dedicated tab, and internal navigation promoting further exploration. The side navigation is hidden on mobile, making the most of the screen real estate.
+            There are progress bars for all sections indicating completion, and in the case of 4th year, a 40% bar illustrating its "in-progress status". Every institution has their brand shown,
+            linked should the user will to investigate the caliber of institution. The main body of the education section is light, bordered with white, with white for the information section subtly
+            drawing the user's eye.
+        </p>
+        <p>The project seciton implements accordion headings in the same style as work experience, emphasising the page's theme further. These projects have header images giving it a "real" feel.
+            It is a brief section, as many of the questions it answers are addressed in other areas. Still, it furthers the design ethos of rewarding exploration.
+        </p>
+        <p>The Hobbies & Interests section utilises the parallax scrolling with a warm image, showcasing some interests in and of itself, whilst the main section helps showcase more individuality,
+            as well as highlighting the interests themselves. Each interest is given visual confirmation via customised li elements from bootstrap, and thanks to the curator.io social media feed below,
+            the user can explore these interests with considerable ease.
+        </p>
+        <p>The web page ends with the contact section - this was done because it is the most searched for item on most webpages. Users typically look in about, and then navigate to the end for contact details.
+            In this way the page meets the user's expectations, and provides details in an easy-to-use format. Each item has a custom icon, reinforcing their distinct elements. All links open in a new tab.
+            This section is capped off by a footer, to close out the theme and reinforce the dark colourscheme.
+        </p>
+    </section>
+    <section id='bootstrap-components'>
+        <ul>Components Implemented
+            <li>Navigation</li>
+            <ul><li>Main navigation</li>
+            <li>Education navigation</li></ul>
+            <li>Scrollspy</li>
+            <ul><li>Main body/navigation</li>
+            <li>Education body/navigation (each tab)</li></ul>
+            <li>Popover</li>
+            <ul><li>Hero title overlay "Kevin Mooney"</li></ul>
+            <li>Tooltips</li>
+            <ul><li>Skill Cards</li></ul>
+            <li>Cards</li>
+            <ul><li>Skills Section</li></ul>
+            <li>Carousel</li>
+            <ul><li>Skill Cards</li></ul>
+            <li>Modal Dialog</li>
+            <ul><li>Contact Button</li>
+            <li>Skill Cards - More Information</li></ul>
+            <li>Accordion</li>
+            <ul><li>Work Experience</li>
+            <li>Projects</li></ul>
+            <li>Tabs</li>
+            <ul><li>Education</li></ul>
+            <li>Flex Grid, Rows & Columns</li>
+            <ul><li>Throughout entire page</li></ul>
+        </ul>
+    </section>
+</body>
+</html>
