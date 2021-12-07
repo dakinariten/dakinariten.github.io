@@ -138,6 +138,10 @@ h3, .navbar {
     padding-top: 10em;
 }
 
+#design-doc-link {
+    text-decoration: none;
+}
+
 a.anchor{display: block; position: relative; top: -110px;}
 
 #devops-content, #adapt-content, #ntc-content {
