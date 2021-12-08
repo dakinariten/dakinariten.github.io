@@ -50,7 +50,7 @@
 }
 
 /* The progress bar (scroll indicator) */
-.progress-bar {
+.scroll-progress-bar {
     height: .25em;
     background: #04AA6D;
     opacity: 0.5;
@@ -155,8 +155,9 @@ h3, .navbar {
 }
 
 #about, #project-section, #skills, #education, #interests-container, #contact, #assignment-overview, #bootstrap-components, #design-discussion {
-    scroll-margin-top: 110px;
+    scroll-margin-top: 115px;
 }
+
 
 #x00152022 {
     margin: 2em;
@@ -211,7 +212,12 @@ a.anchor{display: block; position: relative; top: -110px;}
 /* Work Experience */
 #work-exp, #project-section {
     min-height: 50vh;
-    scroll-margin-top: 110px;
+    scroll-margin-top: 115px;
+}
+
+.accordion-button:hover {
+    background-color: #04AA6D!important;
+    opacity: 0.9;
 }
 
 /* edu-margin */
@@ -226,8 +232,15 @@ a.anchor{display: block; position: relative; top: -110px;}
     border-radius: .25em;
 }
 
-.nav-link.active:hover {
-    background-color: white!important;
+.nav-link.edu-nav.active:hover {
+    opacity: 0.8;
+}
+
+
+.nav-link.edu-nav:hover {
+    background-color: rgba(0, 0, 0, 0.75)!important;
+    color: white!important;
+    border-radius: .25em;
 }
 
 /* Hobbies & Interests */
