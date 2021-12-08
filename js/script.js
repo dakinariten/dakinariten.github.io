@@ -33,16 +33,9 @@ function popOverToggle() {
     })
 }
 
-const accordionItems = document.querySelectorAll('.accordion-collapse')
-const acc = document.querySelector('.accordion-collapse.show')
-
-accordionItems.forEach((el)=>{
-    el.addEventListener('shown.bs.collapse',(e)=>{
-        var scrollOffset = acc.scrollTop + el.parentNode.offsetTop
-        acc.scroll({
-            top: scrollOffset,
-            left: 0, 
-            behavior: 'smooth'
-        })
-    })
-})
+// Curator.io dynamic
+function curatorIo(){
+    var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+    i.src="https://cdn.curator.io/published/0893a6e8-2b8e-49f7-a0ef-d1cd38d47da2.js";
+    e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+}

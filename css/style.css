@@ -349,6 +349,16 @@ background-color: red;
         width: 100vw;
         margin-bottom: .75em;
     }
+
+    .col-9, .col-3 {
+        width: 100vw!important;
+        margin: .5em;
+    }
+
+    #education, #project-section {
+        margin: 0!important;
+        margin-top: 2em!important;
+    }
     
 }
 
