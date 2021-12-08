@@ -39,3 +39,13 @@ function curatorIo(){
     i.src="https://cdn.curator.io/published/0893a6e8-2b8e-49f7-a0ef-d1cd38d47da2.js";
     e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 }
+
+// Collapse menu on click (mobile)
+function collapseMainNav() {
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarCollapse')
+    const bsCollapse = new bootstrap.Collapse(menuToggle)
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => { bsCollapse.toggle() })
+    })
+}
