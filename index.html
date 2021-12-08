@@ -842,32 +842,9 @@
         })();
     </script>
 <script>
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl, {html: true})
-    })
-
-    var mybutton = document.getElementById("scroll-to-top");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-  </script>
-
-<script>scrollBar();</script>>
+popOverToggle();
+scrollBar();
+</script>
 
   <footer class='bg-dark bg-gradient row'><div id='footer-div' class='d-flex align-items-center justify-content-center text-center text-muted opacity-50'><h4>X00152022 - more than just a number</h4></div><div class='d-flex align-items-center justify-content-center text-center fs-6 text-muted opacity-50'><p>Designed by K.Mooney, built with HTML & Bootstrap 5.1</p></div>
     <div class='d-flex align-items-center justify-content-center text-center fs-6 text-muted opacity-50'><a id='design-doc-link' class='text-muted' href='/x00152022'>Design Documentation</a></div></footer>
