@@ -32,7 +32,32 @@
 #adapt-logo {
     filter: invert(100%);
 }
-    
+
+/* Scroll bar */
+.scroll-indicator {
+    position: fixed;
+    top: 110px;
+    z-index: 1;
+    width: 100%;
+    background-color:#212529;
+}
+
+/* The progress container (grey background) */
+.scroll-progress-container {
+    width: 100%;
+    height: .25em;
+    background-color:#212529;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: .25em;
+    background: #04AA6D;
+    opacity: 0.5;
+    width: 0%;
+    transition: ease-in-out;
+} 
+
 
 /* Parallax Scrolling */
 #parallax-hero {
@@ -162,6 +187,14 @@ a.anchor{display: block; position: relative; top: -110px;}
 /* Card Formatting */
 .skill-card-list {
     text-align: left!important;
+}
+
+.skill-card-highlight {
+    transition: all .2s ease-in-out;
+}
+
+.skill-card-highlight:hover {
+    transform: scale(1.1);
 }
 
 /* Skills Carousel */

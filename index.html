@@ -40,6 +40,7 @@
             </div>
         </div>
     </nav>
+    <div class='scroll-indicator'><div class='scroll-progress-container'><div class='progress-bar' id='scroll-bar'></div></div></div>
     <!-- end navigation -->
 <!-- Hero Parallax -->
 <div id='parallax-hero' class='parallax ms-0 row'>
@@ -112,7 +113,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
           <div class='row text-center justify-content-center container-fluid'>
-            <div class='col-6' data-bs-toggle="modal" data-bs-target="#softwareModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+            <div class='col-6 skill-card-highlight' data-bs-toggle="modal" data-bs-target="#softwareModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
                 <div class='card h-100'>
                     <img src="img/software-dev.jpg">
                     <div class='card-body'>
@@ -125,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class='col-6' data-bs-toggle="modal" data-bs-target="#webdevModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+            <div class='col-6 skill-card-highlight' data-bs-toggle="modal" data-bs-target="#webdevModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
                 <div class='card h-100'>
                     <img src="img/web-dev.jpg">
                     <div class='card-body'>
@@ -142,7 +143,7 @@
       </div>
       <div class="carousel-item">
           <div class='row text-center justify-content-center container-fluid'>
-            <div class='col-6' data-bs-toggle="modal" data-bs-target="#graphModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+            <div class='col-6 skill-card-highlight' data-bs-toggle="modal" data-bs-target="#graphModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
                 <div class='card h-100'>
                     <img src="img/graphic-design.jpg">
                     <div class='card-body'>
@@ -155,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class='col-6' data-bs-toggle="modal" data-bs-target="#photoModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+            <div class='col-6 skill-card-highlight' data-bs-toggle="modal" data-bs-target="#photoModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
                 <div class='card h-100'>
                     <img src="img/photography.jpeg">
                     <div class='card-body'>
@@ -172,7 +173,7 @@
       </div>
       <div class="carousel-item">
           <div class='row text-center justify-content-center container-fluid'>
-            <div class='col-6' data-bs-toggle="modal" data-bs-target="#writingModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+            <div class='col-6 skill-card-highlight' data-bs-toggle="modal" data-bs-target="#writingModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
                 <div class='card h-100'>
                     <img src="img/interests-secondary.jpg">
                     <div class='card-body'>
@@ -185,7 +186,7 @@
                     </div>
                 </div>
             </div>
-            <div class='col-6' data-bs-toggle="modal" data-bs-target="#ecomModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
+            <div class='col-6 skill-card-highlight' data-bs-toggle="modal" data-bs-target="#ecomModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to learn more">
                 <div class='card h-100'>
                     <img src="img/ecommerce-mgmt.jpg">
                     <div class='card-body'>
@@ -865,6 +866,9 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
   </script>
+
+<script>scrollBar();</script>>
+
   <footer class='bg-dark bg-gradient row'><div id='footer-div' class='d-flex align-items-center justify-content-center text-center text-muted opacity-50'><h4>X00152022 - more than just a number</h4></div><div class='d-flex align-items-center justify-content-center text-center fs-6 text-muted opacity-50'><p>Designed by K.Mooney, built with HTML & Bootstrap 5.1</p></div>
     <div class='d-flex align-items-center justify-content-center text-center fs-6 text-muted opacity-50'><a id='design-doc-link' class='text-muted' href='/x00152022'>Design Documentation</a></div></footer>
 </body>
