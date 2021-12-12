@@ -1,3 +1,13 @@
+/* Design Doc Styling */
+#design-doc-btn-link {
+    text-decoration: none;
+    padding: .5em;
+}
+
+#introduction {
+    margin-bottom: 2em;
+}
+
 /* Additional Styling to Bootstrap */
 .container-fluid {
     padding: 0;
